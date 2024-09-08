@@ -151,16 +151,16 @@ h1 {
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   img {
-    max-width: 50%;
+    max-width: 60%;
   }
-}
+} */
