@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #fce8e5;
+  --text-primary-color: #292929;
+  --important-color: #cf9971;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-color);
+  color: var(--text-primary-color);
+  margin: 0;
+  font-family: "Satisfy";
+}
+
+p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+span {
+  font-size: larger;
+  color: var(--important-color);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  margin: 0 3%;
+  padding: 7% 0;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 32% 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3%;
+  height: calc(100vh - 80px);
+}
+
+.grid-photo {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+img {
+  max-width: 95%;
+  filter: grayscale(40%);
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+  border: 2px solid #cf9971;
+}
+
+.grid-header {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.grid-content {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.grid-footer {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  animation: fadeInOut 7s ease-in-out infinite;
+  font-family: "Dancing Script";
+  font-weight: bolder;
+  font-size: 46px;
+  margin: 0;
+  color: var(--important-color);
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1280px) {
+  .grid {
+    padding: 0;
+    gap: 1%;
+  }
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  img {
+    max-width: 60%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    gap: 4%;
+  }
+
+  .grid-photo {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+
+  .grid-content {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+
+  .grid-header {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+
+  .grid-footer {
+    grid-column: 1;
+    grid-row: 4/5;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 50%;
+  }
+}
