@@ -10,7 +10,7 @@
 :root {
   --main-color: #fce8e5;
   --text-primary-color: #292929;
-  --important-color: #cf9971;
+  --important-color: #cf9a71;
 }
 
 body {
@@ -55,7 +55,7 @@ main {
   grid-row: 1/4;
 }
 
-img {
+#welcome-img {
   max-width: 95%;
   filter: grayscale(40%);
   border-bottom-left-radius: 25%;
@@ -121,9 +121,10 @@ h1 {
     font-size: 20px;
   }
 
-  img {
+  #welcome-img {
     max-width: 60%;
   }
+
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr 1fr;
