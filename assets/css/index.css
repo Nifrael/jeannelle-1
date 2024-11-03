@@ -11,14 +11,26 @@
   --main-color: #fce8e5;
   --text-primary-color: #292929;
   --important-color: #cf9a71;
+  --white: white;
+}
+
+html,
+body {
+  overflow: auto;
 }
 
 body {
   min-height: 100vh;
-  background-color: var(--main-color);
+  background-color: var(--white);
   color: var(--text-primary-color);
   margin: 0;
   font-family: "Satisfy";
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 p {
@@ -31,12 +43,13 @@ span {
   color: var(--important-color);
 }
 
+/*
 main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .grid {
   margin: 0 3%;
@@ -47,7 +60,6 @@ main {
   grid-template-columns: 32% 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   gap: 3%;
-  height: calc(100vh - 80px);
 }
 
 .grid-photo {
@@ -86,7 +98,7 @@ li {
   padding: 0;
 }
 
-h1 {
+#loading {
   animation: fadeInOut 7s ease-in-out infinite;
   font-family: "Dancing Script";
   font-weight: bolder;

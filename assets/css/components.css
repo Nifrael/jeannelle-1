@@ -42,11 +42,74 @@ nav ul {
 }
 
 footer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
 }
+
+.footer-container {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2% 3%;
+  gap: 3%;
+}
+
+.first-footer,
+.second-footer,
+.third-footer {
+  justify-self: center;
+}
+
+/* .first-footer h1,
+.second-footer h1,
+.third-footer h1 {
+  justify-self: center;
+} */
 
 @media (max-width: 960px) {
   nav ul img {
     width: 250px;
     height: 60px;
+  }
+
+  .footer-container {
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0;
+    padding: 3% 7%;
+  }
+
+  .first-footer,
+  .second-footer,
+  .third-footer {
+    justify-self: start;
+    margin: 0;
+    width: 100%;
+  }
+
+  .first-footer,
+  .second-footer {
+    border-bottom: solid 1px rgb(207, 153, 113);
+  }
+
+  .first-footer h1,
+  .second-footer h1,
+  .third-footer h1 {
+    font-size: 1.5rem;
+    margin: 5% 0 10% 0;
+  }
+
+  .first-footer p,
+  .second-footer p,
+  .third-footer p {
+    font-size: 1.2rem;
   }
 }
