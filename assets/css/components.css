@@ -42,8 +42,8 @@ nav ul {
 }
 
 .welcome-photos {
-  max-width: 85%;
-  margin: 5% auto;
+  max-width: 1000px;
+  margin: 3% auto;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -115,6 +115,19 @@ nav ul {
   border-bottom-right-radius: 70%;
 }
 
+section {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5%;
+  border: 1px solid black;
+}
 /* .welcome-photos {
   max-width: 95%;
   margin: 5% auto;
