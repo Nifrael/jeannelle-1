@@ -49,8 +49,13 @@ footer {
   background-color: var(--main-color);
 }
 
+footer p {
+  font-size: var(--small-text);
+}
+
 .footer-container {
-  max-width: 90%;
+  max-width: 1300px;
+  width: 85%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,6 +85,7 @@ footer {
     /* grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -101,7 +107,7 @@ footer {
     border-bottom: solid 1px rgb(207, 153, 113);
   }
 
-  .first-footer h1,
+  /* .first-footer h1,
   .second-footer h1,
   .third-footer h1 {
     font-size: 1.5rem;
@@ -112,5 +118,5 @@ footer {
   .second-footer p,
   .third-footer p {
     font-size: 1.2rem;
-  }
+  } */
 }

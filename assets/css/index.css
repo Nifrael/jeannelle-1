@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,300;1,300&display=swap");
+@import url(fonts.css);
 
 *,
 *::before,
@@ -22,6 +23,7 @@
   --h3: calc(var(--h4) * var(--scale));
   --h2: calc(var(--h3) * var(--scale));
   --h1: calc(var(--h2) * var(--scale));
+  --small-text: calc(var(--base-size) / var(--scale));
 }
 
 html,
@@ -42,11 +44,6 @@ body {
 
 main {
   flex: 1;
-}
-
-p {
-  font-size: 18px;
-  font-weight: lighter;
 }
 
 span {
@@ -114,7 +111,6 @@ li {
   animation: fadeInOut 7s ease-in-out infinite;
   font-family: var(--title);
   font-weight: bolder;
-  font-size: 46px;
   margin: 0;
   color: var(--important-color);
 }
