@@ -50,11 +50,12 @@ footer {
 }
 
 .footer-container {
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 2% 3%;
-  gap: 3%;
+  gap: 5%;
 }
 
 .first-footer,
