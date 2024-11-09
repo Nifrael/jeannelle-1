@@ -13,6 +13,15 @@
   --text-primary-color: #292929;
   --important-color: #cf9a71;
   --white: white;
+  --title: "Dancing Script";
+  --text: "Playwrite GB S";
+  --base-size: 1rem;
+  --scale: 1.25;
+  --h5: calc(var(--base-size) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
 }
 
 html,
@@ -25,7 +34,8 @@ body {
   background-color: var(--white);
   color: var(--text-primary-color);
   margin: 0;
-  font-family: "Playwrite GB S";
+  font-family: var(--text);
+  font-size: var(--base-size);
   display: flex;
   flex-direction: column;
 }
@@ -70,6 +80,7 @@ main {
 
 #welcome-img {
   max-width: 95%;
+  width: 95%;
   filter: grayscale(40%);
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 25%;
@@ -101,7 +112,7 @@ li {
 
 #loading {
   animation: fadeInOut 7s ease-in-out infinite;
-  font-family: "Dancing Script";
+  font-family: var(--title);
   font-weight: bolder;
   font-size: 46px;
   margin: 0;
