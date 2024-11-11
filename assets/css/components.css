@@ -44,7 +44,9 @@ nav ul {
 .container-photos {
   width: 100%;
   background-color: #ffffff;
-  background-image: url(../images/Background.svg);
+  background-image: url(../images/Background4.svg);
+  background-position: center;
+  background-size: cover;
 }
 
 .welcome-photos {
@@ -74,7 +76,7 @@ nav ul {
   border-top-right-radius: 40%;
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
-  border: var(--white) 0.5vw solid;
+  border: var(--main-color) 0.5vw solid;
 }
 
 .welcome-photos div:nth-child(2) {
@@ -128,6 +130,11 @@ section {
   margin: 0 auto;
 }
 
+.text-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .swiper {
   position: relative;
   width: 90%;
@@ -140,6 +147,14 @@ section {
   display: none;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--important-color) !important;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 3%;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -147,9 +162,8 @@ section {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 90%;
-  min-height: 400px;
-  max-height: 600px;
+  width: 95%;
+  height: 500px;
   margin: 2% auto;
   padding: 3%;
   box-shadow: 0px -1px 6px 6px rgba(207, 154, 113, 0.249);
