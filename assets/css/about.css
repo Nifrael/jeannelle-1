@@ -25,5 +25,11 @@ cite h3 {
 }
 
 #km-photo {
-  height: 1000px;
+  width: 90%;
 }
+
+/* .avatar-about {
+  background-image: url(../images/KM-avatar.jpg);
+  width: 600px;
+  height: 700px;
+} */
