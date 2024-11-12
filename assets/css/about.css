@@ -1,0 +1,29 @@
+.about-photo {
+  background-image: url(../images/About.jpg);
+  background-color: rgba(41, 41, 41, 0.651);
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 700px;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+
+cite {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: var(--main-color);
+}
+
+cite h3 {
+  margin: 0;
+}
+
+.about-container {
+  display: flex;
+}
+
+#km-photo {
+  height: 1000px;
+}

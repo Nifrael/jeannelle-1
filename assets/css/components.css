@@ -8,9 +8,25 @@ nav {
   margin: 0 auto;
 }
 
+nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: 0.5s ease-in-out;
+  font-weight: 600;
+}
+
+nav a:visited {
+  color: var(--text-primary-color);
+}
+
+nav a:hover {
+  color: var(--important-color);
+  transition: 0.5s ease-in-out;
+}
+
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
   list-style-type: none;
   align-items: center;
@@ -256,6 +272,21 @@ footer {
 
 footer p {
   font-size: var(--small-text);
+}
+
+footer a {
+  font-size: var(--small-text);
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+footer a:visited {
+  color: var(--text-primary-color);
+}
+
+footer a:hover {
+  color: var(--important-color);
+  transition: 0.5s ease-in-out;
 }
 
 .footer-container {
