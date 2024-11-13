@@ -13,6 +13,7 @@ nav a {
   font-size: 1.4rem;
   transition: 0.5s ease-in-out;
   font-weight: 600;
+  color: var(--text-primary-color);
 }
 
 nav a:visited {
@@ -32,17 +33,17 @@ nav ul {
   align-items: center;
   margin: 0 auto;
   padding: 0;
+}
 
-  img {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    width: 370px;
-    height: 90px;
-  }
+nav img {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 370px;
+  height: 90px;
+}
 
-  li {
-    font-size: 1.1rem;
-  }
+nav li {
+  font-size: 1.1rem;
 }
 
 .gradient {
@@ -275,6 +276,7 @@ footer p {
 }
 
 footer a {
+  color: var(--text-primary-color);
   font-size: var(--small-text);
   text-decoration: none;
   transition: 0.5s ease-in-out;
