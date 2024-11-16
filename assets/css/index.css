@@ -24,6 +24,7 @@
   --h2: calc(var(--h3) * var(--scale));
   --h1: calc(var(--h2) * var(--scale));
   --small-text: calc(var(--base-size) / var(--scale));
+  --swiper-navigation-size: 35px !important;
 }
 
 html,

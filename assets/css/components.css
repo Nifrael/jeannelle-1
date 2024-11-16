@@ -209,9 +209,14 @@ section {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--important-color) !important;
-  background-color: var(--main-color);
-  border-radius: 50%;
-  padding: 3%;
+}
+
+.swiper-button-next {
+  padding-left: 5%;
+}
+
+.swiper-button-prev {
+  padding-right: 5%;
 }
 
 .card {
