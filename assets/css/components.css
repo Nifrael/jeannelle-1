@@ -61,12 +61,12 @@ nav li {
 .container-photos {
   width: 100%;
   background-color: #ffffff;
-  background-image: url(../images/Background4.svg);
+  background-image: url(../images/Background.svg);
   background-position: center;
   background-size: cover;
 }
 
-.welcome-photos {
+/* .welcome-photos {
   max-width: 1000px;
   margin: 0 auto;
   padding: 3% 0;
@@ -139,7 +139,7 @@ nav li {
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 70%;
-}
+} */
 
 section {
   max-width: 1200px;
@@ -150,6 +150,48 @@ section {
 .text-container {
   width: 85%;
   margin: 0 auto;
+}
+
+.main-title {
+  margin: 5% auto;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: start;
+}
+
+.paragraph p:last-child {
+  margin: 10% auto;
+  color: var(--important-color);
+  font-style: italic;
+  text-align: center;
+  font-weight: bolder;
+  font-size: var(--h5);
+}
+
+.button-container {
+  text-align: center;
+  margin: 7% auto;
+}
+
+.button {
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--important-color);
+  font-weight: bolder;
+  font-size: var(--h5);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--important-color);
+  transition: 0.7s ease-in-out;
+}
+
+.button:hover {
+  border: 2px solid var(--important-color);
+  background-color: var(--white);
+  color: var(--important-color);
+  transition: 0.7s ease-in-out;
 }
 
 .swiper {
@@ -186,12 +228,16 @@ section {
   box-shadow: 0px -1px 6px 6px rgba(207, 154, 113, 0.249);
   border-radius: 5px;
 }
-/* .welcome-photos {
+
+.welcome-photos {
   max-width: 95%;
-  margin: 5% auto;
+  margin: 0 auto;
+  padding: 1% 0% 4% 0%;
   display: flex;
   align-items: center;
   overflow: hidden;
+  position: relative;
+  gap: 2%;
 }
 
 .welcome-photos img {
@@ -208,10 +254,12 @@ section {
 .welcome-photos div:first-child img {
   order: 3;
   width: 90%;
-  border-top-left-radius: 90%;
-  border-top-right-radius: 90%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  padding-top: 30%;
+  scale: 1.2;
 }
 
 .welcome-photos div:nth-child(2) {
@@ -220,10 +268,11 @@ section {
 
 .welcome-photos div:nth-child(2) img {
   width: 100%;
-  border-top-left-radius: 90%;
-  border-top-right-radius: 20%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 90%;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 80%;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 30%;
+  padding-top: 20%;
 }
 
 .welcome-photos div:nth-child(3) {
@@ -234,8 +283,9 @@ section {
   width: 100%;
   border-top-left-radius: 60%;
   border-top-right-radius: 40%;
-  border-bottom-left-radius: 30%;
+  border-bottom-left-radius: 50%;
   border-bottom-right-radius: 70%;
+  padding-bottom: 20%;
 }
 
 .welcome-photos div:nth-child(4) {
@@ -244,10 +294,11 @@ section {
 
 .welcome-photos div:nth-child(4) img {
   width: 100%;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 90%;
-  border-bottom-left-radius: 90%;
-  border-bottom-right-radius: 20%;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 60%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 70%;
+  padding-top: 20%;
 }
 
 .welcome-photos div:nth-child(5) {
@@ -260,8 +311,9 @@ section {
   border-top-left-radius: 40%;
   border-top-right-radius: 60%;
   border-bottom-left-radius: 70%;
-  border-bottom-right-radius: 30%;
-} */
+  border-bottom-right-radius: 50%;
+  padding-bottom: 20%;
+}
 
 footer {
   min-height: 100%;
@@ -293,12 +345,11 @@ footer a:hover {
 
 .footer-container {
   max-width: 1300px;
-  width: 85%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2% 3%;
-  gap: 5%;
+  margin: 0% 2% 2% 2%;
 }
 
 .first-footer,
