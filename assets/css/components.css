@@ -62,7 +62,7 @@ nav li {
   );
 }
 
-.menu {
+#menu {
   width: 20px;
   display: none;
 }
@@ -433,7 +433,7 @@ footer a:hover {
     gap: 7vw;
   }
 
-  .menu {
+  #menu {
     display: block;
   }
 
