@@ -8,6 +8,10 @@ nav {
   margin: 0 auto;
 }
 
+.menu-titles {
+  display: none;
+}
+
 nav a {
   text-decoration: none;
   font-size: 1.4rem;
@@ -56,6 +60,11 @@ nav li {
     rgb(207, 153, 113) 80%,
     rgb(255, 255, 255) 100%
   );
+}
+
+.menu {
+  width: 20px;
+  display: none;
 }
 
 .container-photos {
@@ -417,6 +426,38 @@ footer a:hover {
   nav ul img {
     width: 250px;
     height: 60px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 7vw;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu-left,
+  .menu-right {
+    display: none;
+  }
+
+  .menu-titles {
+    display: none;
+  }
+
+  .menu-titles.show {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    top: 85px;
+    left: 0;
+    background-color: var(--white);
+    padding: 10px;
+    z-index: 10;
   }
 
   .welcome-photos {
