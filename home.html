@@ -5,42 +5,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeannelle</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="images/Icon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="icon" href="assets/images/Icon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/5ae925a9ee.js" crossorigin="anonymous"></script>
+  <script defer src="swiper.js"></script>
+  <script defer src="menu.js"></script>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <ul>
+        <img src="assets/images/menu.svg" alt="" id="menu">
+        <li><a href="home.html" class="menu-left">Accueil</a></li>
+        <li><img src="assets/images/Jeannelle.png" alt="Logo"></li>
+        <li><a href="about.html" class="menu-right">A propos</a></li>
+        <div class="menu-titles">
+          <li><a href="home.html">Accueil</a></li>
+          <li><a href="about.html">A propos</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="gradient">
+    </div>
+  </header>
   <main>
-    <div class="grid">
-      <div class="grid-photo">
-        <img src="images/welcome.jpg" alt="">
-      </div>
-      <div class="grid-header">
-        <h1>Cet espace est en cours de création.</h1>
-      </div>
-      <div class="grid-content">
-        <p>Nous proposons plusieurs activités :</p>
-        <ul>
-          <li>
-            <span>Naturopathie et Nutrition / Micronutrition</span>
-          </li>
-          <li>
-            <span>Réflexologie plantaire et énergétique chinoise</span>
-          </li>
-          <li>
-            <span>Yin yoga</span>
-          </li>
-          <li>
-            <span>Psychopraticienne</span>
-          </li>
-        </ul>
-      </div>
-      <div class="grid-footer">
-        <p>Prenez contact au <span>07.60.48.48.06</span> pour toutes questions ou pour prendre rendez-vous.</p>
-        <p>Nous nous trouvons au <span>18 Rue Lieutenant Basseras à Millas</span>, à 20 minutes de Perpignan.</p>
+    <div class="container-photos">
+      <div class="welcome-photos">
+        <div>
+          <img src="assets/images/Home.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/Home2.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/Home3.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/Home4.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/Home5.jpg" alt="">
+        </div>
       </div>
     </div>
+    <div class="gradient">
+    </div>
+
+    <section>
+      <div class="text-container main-title">
+        <h1>Jeannelle, un centre de thérapeutes...</h1>
+        <p>À votre écoute, au cœur du village de Millas.</p>
+        <p>Un endroit cosy où l’on peut se poser et être entendu dans ses mots… et ses maux.</p>
+        <p>Un centre pour vous accompagner.</p>
+        <h1>...Plusieurs thérapies y sont proposées...</h1>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/images/Plant.svg" alt="" id="therapeutic-icon">
+              <div>
+                <h2>Naturopathie</h2>
+                <h2>Nutritionniste / Micronutritionniste</h2>
+              </div>
+              <div>
+                <p>Pour améliorer vos habitudes et hygiène de vie, et donner au corps et aux émonctoires leurs pleins
+                  potentiels de fonctionnement.</p>
+                <p>Pour améliorer et comprendre les symptômes, les maux, que le corps nous signale.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/images/Feet.svg" alt="" id="therapeutic-icon">
+              <div>
+                <h2>Réflexologie plantaire</h2>
+                <h2>Energétique chinoise</h2>
+              </div>
+              <div>
+                <p>Redonner au corps et aux organes leur plein potentiel en agissant sur les zones réflexes du pied.</p>
+                <p>Lever les blocages énergétiques, relancer et restaurer la circulation dans les méridiens.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/images/Brain.svg" alt="" id="therapeutic-icon">
+              <div>
+                <h2>Psychopraticienne</h2>
+              </div>
+              <div>
+                <p>Être entendu dans sa sensibilité et ses ressentis,
+                  au-delà des mots et des faits.</p>
+                <p>Être entendu et accompagné sans jugement remet du sens et de la clarté en soi et dans les épreuves
+                  que
+                  l'on traverse.</p>
+                <p>Chaleureuse rencontre avec soi-même.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/images/Yin.svg" alt="" id="therapeutic-icon">
+              <div>
+                <h2>Yin Yoga</h2>
+              </div>
+              <div>
+                <p>Revenir à soi, dans des postures non engageantes, ne nécessitant ni force, ni équilibre ou
+                  souplesse particulière.</p>
+                <p>Le premier ennemi du mental est le mental lui-même : offrons-lui pause et silence.</p>
+                <p>Cette pratique introspective permet de se poser dans le moment présent, de relâcher les
+                  tensions et de réduire le stress.</p>
+                <p>Agir sur les méridiens et les fascias favorise la santé des organes internes,
+                  améliore
+                  la digestion, le sommeil, soulage les douleurs et ramène de la clarté et de l'apaisement à l'esprit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="text-container main-title">
+        <h1>...Mais pas seulement</h1>
+        <div class="text-container paragraph">
+          <p>
+            <dt>Si vous êtes thérapeute, j'ai à coeur de partager ce lieu avec vous :</dt>
+          </p>
+          <p>
+            <dd><i class="fa-solid fa-spa" style="color: #cf9a71;"></i> Un cabinet pour un(e) ostéopathe est disponible
+              en location mensuelle.</dd>
+          </p>
+          <p>
+            <dd><i class="fa-solid fa-spa" style="color: #cf9a71;"></i> Un autre cabinet est disponible : une ou deux
+              journées fixes par semaine est possible pour d'autres
+              thérapeutes.</dd>
+          </p>
+          <p>Soyons nombreux à accueillir celles et ceux qui sont en demande. Soyons nombreux pour échanger et partager.
+            Offrez vos pratiques, vos connaissances, votre sensibilité...
+          </p>
+        </div>
+        <h3>N'hésitez pas, contactez-moi.</h3>
+      </div>
+      <div class="therapist-card">
+        <h5>Karine Maraval</h5>
+        <img src="assets/images/KM-avatar3.jpg" alt="" class="avatar">
+        <p>07.60.48.48.06</p>
+      </div>
+      <div class="button-container">
+        <a href="about.html" class="button">A propos de moi</a>
+      </div>
+      <cite class="citation-home">
+        <h3>"Préparez votre temps, pour vous j'ai tout le mien."</h3>
+      </cite>
+    </section>
   </main>
+  <div class="photo-end"></div>
+  <div class="gradient">
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="first-footer">
+        <h5>Jeannelle</h5>
+        <p>18 Rue Lieutenant Basseras, 66170 Millas</p>
+        <p>Téléphone : 07.60.48.48.06</p>
+      </div>
+      <div class="second-footer">
+        <h5>Nos thérapies</h5>
+        <p>Naturopathie et Nutrition / Micronutrition</p>
+        <p>Réfléxologie plantaire & énergétique chinoise</p>
+        <p>Yin Yoga</p>
+        <p>Psychopraticienne</p>
+      </div>
+      <div class="third-footer">
+        <h5>Nos thérapeutes</h5>
+        <p><a href="about.html">Karine Maraval</a></p>
+        <p>D'autres à venir...</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
