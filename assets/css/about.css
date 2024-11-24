@@ -1,5 +1,5 @@
 .about-photo {
-  background-image: url(../images/test1.jpg);
+  background-image: url(../images/About.jpg);
   background-color: rgba(41, 41, 41, 0.313);
   background-blend-mode: overlay;
   width: 100%;
@@ -117,8 +117,10 @@ p {
 
 @media (width <= 960px) {
   .about-photo {
+    background: url(../images/test1.jpg);
     height: 600px;
-    background-position: left;
+    background-size: cover;
+    background-position: bottom;
   }
 
   cite h3 {
