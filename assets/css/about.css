@@ -117,7 +117,7 @@ p {
 
 @media (width <= 960px) {
   .about-photo {
-    background-image: url(../images/test1.jpg);
+    background-image: url(../images/About2.jpg);
     height: 600px;
     background-size: cover;
     background-position: bottom;
