@@ -14,6 +14,7 @@
   --text-primary-color: #292929;
   --important-color: #cf9a71;
   --white: white;
+  --background: rgba(238, 238, 238, 0.411);
   --title: "Dancing Script";
   --text: "Playwrite GB S";
   --base-size: 1rem;
@@ -34,7 +35,7 @@ body {
 
 body {
   min-height: 100vh;
-  background-color: var(--white);
+  background-color: var(--background);
   color: var(--text-primary-color);
   margin: 0;
   font-family: var(--text);
