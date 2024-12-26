@@ -1,3 +1,5 @@
+/* Photos d'accueil */
+
 .container-photos {
   width: 100%;
   background-color: #ffffff;
@@ -92,6 +94,10 @@
   padding-bottom: 20%;
 }
 
+/* Fin des photos d'accueil */
+
+/* Swiper */
+
 .swiper {
   position: relative;
   width: 90%;
@@ -132,6 +138,10 @@
   border-radius: 5px;
 }
 
+/* Fin du Swiper */
+
+/* Carte du thérapeute */
+
 .therapist-card {
   width: 40%;
   margin: 2% auto;
@@ -164,6 +174,8 @@
   margin: auto;
   padding: 5%;
 }
+
+/* Fin de la carte du thérapeute */
 
 .citation-home {
   text-align: center;
