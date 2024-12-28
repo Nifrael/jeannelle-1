@@ -1,11 +1,32 @@
 /* Photos d'accueil */
 
 .container-photos {
+  position: relative;
   width: 100%;
-  background-color: #ffffff;
-  background-image: url(../images/Background.svg);
-  background-position: center;
-  background-size: cover;
+  overflow: hidden;
+}
+
+.background-welcome {
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.background-welcome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1px);
+}
+
+.content-welcome {
+  position: relative;
+  z-index: 2;
 }
 
 .welcome-photos {
@@ -96,6 +117,44 @@
 
 /* Fin des photos d'accueil */
 
+/* Div de présentation */
+
+.presentation {
+  position: relative;
+}
+
+.circle-div {
+  position: relative;
+  z-index: 2;
+}
+
+.blur-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 154, 113, 0.25) 0%,
+    rgba(207, 154, 113, 0.4) 50%,
+    rgba(207, 154, 113, 0.25) 100%
+  );
+  border-top-left-radius: 60%;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 40%;
+  filter: blur(30px);
+}
+
+.left {
+  left: -100px;
+}
+
+.right {
+  right: -100px;
+}
+
+/* Fin de div de présentation */
+
 /* Swiper */
 
 .swiper {
@@ -124,6 +183,7 @@
 }
 
 .card {
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -266,6 +326,14 @@
     border-bottom-right-radius: 70%;
     border-top-left-radius: 0%;
     padding-bottom: 0%;
+  }
+
+  .left {
+    left: -300px;
+  }
+
+  .right {
+    right: -300px;
   }
 
   .swiper {
