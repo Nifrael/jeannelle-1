@@ -34,6 +34,7 @@ body {
 body {
   min-height: 100vh;
   background-color: var(--white);
+  backdrop-filter: blur(30px);
   color: var(--text-primary-color);
   margin: 0;
   font-family: var(--text);
@@ -44,4 +45,10 @@ body {
 
 main {
   flex: 1;
+}
+
+@media (width <= 960px) {
+  :root {
+    --scale: 1.18;
+  }
 }
