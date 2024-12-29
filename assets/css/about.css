@@ -115,7 +115,7 @@ p {
   border-bottom-right-radius: 50px;
 }
 
-@media (width <= 960px) {
+@media (width < 768px) {
   .about-photo {
     background-image: url(../images/About2.jpg);
     height: 600px;
