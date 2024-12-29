@@ -119,7 +119,7 @@
 
 /* Div de présentation */
 
-.presentation {
+/* .presentation {
   position: relative;
 }
 
@@ -143,7 +143,7 @@
   border-bottom-right-radius: 60%;
   border-bottom-left-radius: 40%;
   filter: blur(20px);
-}
+} */
 
 .left {
   left: -100px;
