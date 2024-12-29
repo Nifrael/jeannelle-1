@@ -112,19 +112,15 @@ section {
 .button {
   border-radius: 15px;
   text-decoration: none;
-  /* background-color: var(--white); */
-  color: var(--important-color);
-  font-weight: bolder;
-  font-size: var(--h5);
+  background-color: var(--important-color);
+  color: var(--white);
   padding: 0.5rem 1rem;
-  /* border: 2px solid var(--important-color); */
   transition: 0.7s ease-in-out;
 }
 
 .button:hover {
-  /* border: 2px solid var(--important-color); */
-  background-color: var(--important-color);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--important-color);
   transition: 0.7s ease-in-out;
 }
 
@@ -230,7 +226,7 @@ footer a:hover {
   }
 
   .button-container {
-    margin: 15% auto;
+    margin: 10% auto;
   }
 
   .footer-container {
