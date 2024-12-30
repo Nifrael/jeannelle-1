@@ -115,7 +115,7 @@ p {
   border-bottom-right-radius: 50px;
 }
 
-@media (width <= 960px) {
+@media (width < 768px) {
   .about-photo {
     background-image: url(../images/About2.jpg);
     height: 600px;
@@ -148,6 +148,14 @@ p {
     width: 90%;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .text-container > dd {
+    margin-left: 5%;
+  }
+
+  p {
+    padding-left: 0;
   }
 
   .text-container:first-child {
