@@ -169,7 +169,7 @@ footer a:hover {
 }
 
 .photo-end {
-  margin-top: 5%;
+  margin-top: 15dvh;
   background-image: url(../images/End.jpg);
   width: 100%;
   height: 450px;
