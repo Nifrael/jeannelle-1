@@ -490,6 +490,15 @@
     right: -300px;
   }
 
+  .planning-container {
+    width: 95%;
+    padding: 0.5rem;
+  }
+
+  .planning-container img {
+    width: 80%;
+  }
+
   .swiper {
     width: 95%;
   }
