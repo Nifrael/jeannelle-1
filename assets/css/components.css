@@ -235,7 +235,7 @@ footer a:hover {
   }
 }
 
-@media (width <= 1024px) {
+@media (width < 1024px) {
   .footer-container {
     width: 100%;
     display: flex;
