@@ -199,7 +199,11 @@
 }
 
 .swiper-pagination {
-  color: var(--important-color) !important;
+  padding-top: 5%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--important-color) !important;
 }
 
 .card {
