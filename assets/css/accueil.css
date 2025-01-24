@@ -198,6 +198,10 @@
   padding-right: 5%;
 }
 
+.swiper-pagination {
+  color: var(--important-color) !important;
+}
+
 .card {
   background-color: var(--white);
   display: flex;
@@ -206,7 +210,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 95%;
+  width: 90%;
   height: 500px;
   margin: 2% auto;
   padding: 3%;
