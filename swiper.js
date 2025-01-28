@@ -1,10 +1,16 @@
 const swiper = new Swiper(".swiper", {
   speed: 1000,
-  spaceBetween: 100,
+  spaceBetween: 30,
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 1.3,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.27,
+      spaceBetween: 10,
+    },
+  },
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
