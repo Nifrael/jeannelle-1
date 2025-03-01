@@ -175,7 +175,7 @@
 
 .swiper {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 3% auto;
   overflow: hidden;
@@ -198,6 +198,14 @@
   padding-right: 5%;
 }
 
+.swiper-pagination {
+  padding-top: 5%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--important-color) !important;
+}
+
 .card {
   background-color: var(--white);
   display: flex;
@@ -206,12 +214,21 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 95%;
+  width: 100%;
   height: 500px;
+  max-height: 90dvh;
   margin: 2% auto;
   padding: 3%;
   box-shadow: 0px -1px 6px 6px rgba(207, 154, 113, 0.249);
   border-radius: 5px;
+}
+
+.card p {
+  font-size: var(--small-text);
+}
+
+#therapeutic-icon {
+  width: 70px;
 }
 
 /* Fin du Swiper */
@@ -284,17 +301,29 @@
 
 .unlimited-container {
   width: 100%;
-  box-shadow: 0px -1px 6px 6px var(--main-color);
-  background-color: var(--main-color);
+  /* box-shadow: 0px -1px 6px 6px var(--main-color); */
+  /* background-color: var(--main-color); */
   padding-top: 3%;
   margin-top: 10%;
+}
+
+.conference-container {
+  margin: auto;
+  width: 60%;
+  padding: 1rem;
+}
+
+.conference-container img {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 20px;
 }
 
 #events-title {
   text-align: center;
   margin: auto;
   margin-bottom: 3%;
-  box-shadow: 0px -1px 6px 6px var(--white);
+  box-shadow: 0px -1px 6px 6px var(--main-color);
   width: 50%;
   padding: 3%;
   border-radius: 20px;
@@ -306,7 +335,7 @@
 }
 
 #events-title:hover {
-  background-color: white;
+  background-color: var(--main-color);
   transition: 0.5s ease-in-out;
 }
 
@@ -324,7 +353,7 @@
 
 .alt {
   grid-template-columns: 70% 30%;
-  border-left: 10px solid var(--main-color);
+  /* border-left: 10px solid var(--main-color); */
 }
 
 .event-infos {
@@ -499,8 +528,17 @@
     width: 90%;
   }
 
+  .conference-container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .conference-container img {
+    width: 100%;
+  }
+
   .swiper {
-    width: 95%;
+    width: 100%;
   }
 
   .swiper-button-next {
@@ -513,6 +551,7 @@
 
   .card {
     height: 600px;
+    max-height: 95dvh;
   }
 
   .therapist-card {
@@ -532,6 +571,15 @@
 
   .planning-container img {
     width: 80%;
+  }
+
+  .conference-container {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .conference-container img {
+    width: 100%;
   }
 
   .therapist-card img {

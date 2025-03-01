@@ -25,10 +25,6 @@ p {
   margin: 0.5rem 0;
 }
 
-#therapeutic-icon {
-  width: 70px;
-}
-
 @media (width <= 960px) {
   h1 {
     font-size: var(--h2);

@@ -1,6 +1,23 @@
 const swiper = new Swiper(".swiper", {
-  speed: 400,
-  spaceBetween: 100,
+  speed: 1000,
+  spaceBetween: 30,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 1.3,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.27,
+      spaceBetween: 10,
+    },
+  },
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+  },
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -8,6 +25,7 @@ const swiper = new Swiper(".swiper", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    dynamicBullets: true,
   },
 
   // Navigation arrows
